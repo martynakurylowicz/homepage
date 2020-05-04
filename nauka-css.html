@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martyn</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <a href="index.html">WTF</a>
+            <a href="nauka-html.html">HTML</a>
+            <a href="nauka-css.html">CSS</a>
+            <a href="nauka-js.html">JavaScript</a>
+            <a href="nauka-terminal.html">Terminal</a>
+        </nav>
+    </header>
+    <main>
+        <header class="header">
+            <h1>CSS</h1>
+        </header>
+
+        <section>
+            <img src="img/header-css.png" alt="CSS">
+            <h2>Style</h2>
+            <article>
+                <p>Reguły CSS:</p>
+                <ul>
+                    <li>Hierarchia: ( !important ; style="" ); #name ; .name ; element - w nawiasie lepiej nie używać
+                    </li>
+                    <li>Kod czyta się od góry - przy takich samych selektorach i znacznikach to co jest niżej wypisane w
+                        stylach będzie ostatecznym stylem </li>
+                    <li>Dwa style w jednym selektorze np. dwa kolory - przy takich przypadkach dolny jest docelowym</li>
+                    <li>Najlepiej zawsze dodawać klasy do wszystkich elementów</li>
+                    <li>Nazywamy klasy po angielsku zgodnie z przeznaczeniem z użyciek kebab-case</li>
+                </ul>
+                <h4>CSS = Cascading Style Sheets</h4>
+                <p>CSS odpowiadają za prezentację. Wpywają na wygląd elementów HTML na ekranie, wydrukach itp. Pliki
+                    zawierające kod CSS mają rozszerzenie .css</p>
+
+                <p>Składnia CSS to reguły:</p>
+                <p>selektor &#123;<br>&#32;&#32;właściwość: wartość;<br>&#125;</p>
+                <p> linkowanie stylu &lt;link href="style.css" rel="stylesheet" type="text/css"&gt;</p>
+
+                <h4>Poznane selektory:</h4>
+                <p>#id. class element - selektory stylów</p>
+                <p>.name &#123;<br>&#32;&#32;właściwość: wartość;<br>&#125; - selektor klasy </p>
+                <p>#name &#123;<br>&#32;&#32;właściwość: wartość;<br>&#125; - selektor id </p>
+                <p>selektor podsekcja &#123;<br>&#32;&#32;właściwość: wartość;<br>&#125; - stylowanie danego elementu w
+                    wybranym selektorze</p>
+                <p>!important - do zastosowania w ostateczności jako dopiska do stylu / nadpisuje pozostałe style
+                    elementu wybranym stylem </p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+    </footer>
+
+</body>
+
+</html>

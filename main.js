@@ -1,0 +1,1 @@
+console.log('Cześć! To strona nauki WTF Martyny')
