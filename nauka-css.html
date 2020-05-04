@@ -36,10 +36,14 @@
                     <li>Dwa style w jednym selektorze np. dwa kolory - przy takich przypadkach dolny jest docelowym</li>
                     <li>Najlepiej zawsze dodawać klasy do wszystkich elementów</li>
                     <li>Nazywamy klasy po angielsku zgodnie z przeznaczeniem z użyciek kebab-case</li>
+                    <li>Jednostki: 0 możemy zapisać bez jednostki/ px - piksele, %-procent, vw-viewport width/parametr
+                        całego "okna", vh-viewport height/parametr całego "okna"</li>
                 </ul>
                 <h4>CSS = Cascading Style Sheets</h4>
                 <p>CSS odpowiadają za prezentację. Wpywają na wygląd elementów HTML na ekranie, wydrukach itp. Pliki
                     zawierające kod CSS mają rozszerzenie .css</p>
+                <p>CSS można stylować zgodnie z poniższym box modelem:</p>
+                <img src="img/box-model.png" alt="box model" class="img-text">
 
                 <p>Składnia CSS to reguły:</p>
                 <p>selektor &#123;<br>&#32;&#32;właściwość: wartość;<br>&#125;</p>
@@ -53,6 +57,32 @@
                     wybranym selektorze</p>
                 <p>!important - do zastosowania w ostateczności jako dopiska do stylu / nadpisuje pozostałe style
                     elementu wybranym stylem </p>
+                <p>display:block lub display:inline - elementy ustawiają się jako bloki pod sobą lub w linii obok siebie
+                </p>
+                <p>display:inline-block - dodatkowe właściwości</p>
+                <p>width:/height: - szerokość wysokość elementów / zawsze dodaj jednostkę</p>
+                <p>max-width: / max-height: - maksymalne parametry elementów / nie robi się pasek przewijania</p>
+                <p>min-width: / min-height: - minimalne parametry elementów</p>
+                <p>overflow: hidden; - wszystko co jest poza divem jest schowane/odcięte</p>
+                <p>overflow: auto; - jako invisible + dodaje scroll w divie</p>
+                <p>padding: jednostka - wewnętrzny margines / można wypisać jednostki w kolejności top, right, bottom,
+                    left - jak w zegarku / lub parami lustrzanie</p>
+                <p>border: jednostka / np. solid / color - obramowanie</p>
+                <p>border-radius: jednostka - zaokrąglenie narożników</p>
+                <p>margin: jednostka - odsunięcie od innych elementów - margines / marginesy się sumują</p>
+                <p>margin: __px auto - margines automatyczny - wyśrodkowany</p>
+                <p>box-sizing: border-box /content-box - element dostosowuje się do wymiarów danych elementów / border
+                    mieści się w wymiarze</p>
+                <p>position: static; / relative; / absolute; - absolute przyjmuje pozycje z poniższych znaczników (jak
+                    współrzędne) </p>
+                <P>top: jednostka / left / right / bottom - pozycja</P>
+                <p>z-index: liczba; - hierarchia - wyższy jest bliżej ekranu czyli nad / pod</p>
+                <p>position: fixed; - zafiksowany / przyklejony np. dla nagłówków </p>
+                <P>postition: sticky; - element przeklejony który wyświetla się cały czas przy scrollowaniu /nie może
+                    mieć overflowa</P>
+                <p>float: - float nie służy do budowania layoutów - flout służy do opływania elementów / np. float: left
+                    -jestem po lewej a treść opływa mnie po przeciwnej czyli prawej</p>
+                <p>clear: both - czyści z dwóch stron / dopasowuje do największych parametrów</p>
             </article>
         </section>
     </main>

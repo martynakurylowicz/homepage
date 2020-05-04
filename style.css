@@ -39,3 +39,10 @@ img {
     float: right;
     padding-right: 50px;
 }
+
+.img-text {
+    float: none;
+    display: block;
+    width: 30%;
+    height: 30%;
+}
