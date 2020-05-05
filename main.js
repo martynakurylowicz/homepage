@@ -1,1 +1,1 @@
-console.log('Cześć! To strona nauki WTF Martyny')
+console.log("Cześć! To strona nauki WTF Martyny");

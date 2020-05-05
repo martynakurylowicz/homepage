@@ -1,67 +1,96 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Martyn</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="menu">
-            <a href="index.html">WTF</a>
-            <a href="nauka-html.html">HTML</a>
-            <a href="nauka-css.html">CSS</a>
-            <a href="nauka-js.html">JavaScript</a>
-            <a href="nauka-terminal.html">Terminal</a>
-        </nav>
+      <nav class="menu">
+        <a href="index.html">WTF</a>
+        <a href="nauka-html.html">HTML</a>
+        <a href="nauka-css.html">CSS</a>
+        <a href="nauka-js.html">JavaScript</a>
+        <a href="nauka-terminal.html">Terminal</a>
+      </nav>
     </header>
     <main>
-        <header class="header">
-            <h1>JS - JavaScript</h1>
-        </header>
+      <header class="header">
+        <h1>JS - JavaScript</h1>
+      </header>
 
-        <section>
-            <img src="img/header-js.png" alt="JS">
-            <h2>Programowanie</h2>
-            <article>
-                <p>Szkolenie obejmuje wersję ECMAScript2015+ czyli ES6+</p>
+      <section>
+        <img src="img/header-js.png" alt="JS" />
+        <h2>Programowanie</h2>
+        <article>
+          <p>Szkolenie obejmuje wersję ECMAScript2015+ czyli ES6+</p>
 
-                <h4>Z czego składa się JS:</h4>
-                <ul>
-                    <li>Wartości - </li>
-                    <li>Operacje porównywania</li>
-                    <li>Literały</li>
-                    <li>Zmienne</li>
-                    <li>Obiekty</li>
-                    <li>Funkcje</li>
-                </ul>
-                <p> linkowanie skryptu &lt;script src="main.js"&gt;&lt;/script&gt;</p>
-                <p>; - średnik oznacza linię skończoną</p>
+          <h4>Z czego składa się JS:</h4>
+          <ul>
+            <li>Wartości -</li>
+            <li>Operacje porównywania</li>
+            <li>Literały</li>
+            <li>Zmienne (let, const, var) / nazwy camelCase</li>
+            <li>Obiekty</li>
+            <li>Funkcje</li>
+          </ul>
+          <p>linkowanie skryptu &lt;script src="main.js"&gt;&lt;/script&gt;</p>
+          <p>; - średnik oznacza linię skończoną</p>
+          <p>
+            Zmienne: const - stałe połączenie z jedną wartością / let -
+            połączenie które można przepinać, ale zdefiniowane raz
+          </p>
 
-                <h4>Poznane funkcje:</h4>
-                <ul>
-                    <li>alert('treść'); - komunikator na początku / okienko</li>
-                    <li>console.log('treść'); - przy badaniu strony w odzielnym okienku wyświetla się jako
-                        komunikat/wiadomość dla developerów</li>
-                    <li>console.log(name); lub console.log(age); - funkcja ze zmienną / zapis bez apostrofów</li>
-                    <li>const name='Maciek'; - stała zmienna - przypisanie wartości zmiennej / przy dłużej nazwie
-                        zmiennej należy użyć camelCase</li>
-                    <li>const age=32; - stała zmienna - przypisanie wartości zmiennej / przy dłużej nazwie zmiennej
-                        należy użyć camelCase</li>
-                    <li>` - backtick - specjalny ciąg znaków zwany literałem </li>
-                    <li>console.log(`Nazywam się ${name} i mam ${age} lat`) - ${zmienna} - w użyciu mieszanych ciągów
-                        znaków w backticku</li>
-                </ul>
-            </article>
-        </section>
+          <h4>Typy proste:</h4>
+          <ul>
+            <li>string - tekst / otaczamy ' lub "</li>
+            <li>number - liczba</li>
+            <li>bigint - duża liczba / większa niż 2^53</li>
+            <li>boolean - true lub false</li>
+            <li>null - wartość celowo niezidentyfikowana</li>
+            <li>undefined - brak definicji</li>
+            <li>*symbol - tworzy unikalne opakowanie</li>
+          </ul>
+
+          <h4>Poznane funkcje:</h4>
+          <ul>
+            <li>alert('treść'); - komunikator na początku / okienko</li>
+            <li>
+              console.log('treść'); - przy badaniu strony w odzielnym okienku
+              wyświetla się jako komunikat/wiadomość dla developerów
+            </li>
+            <li>
+              console.log(name); lub console.log(age); - funkcja ze zmienną /
+              zapis bez apostrofów
+            </li>
+            <li>
+              const name='Maciek'; - stała zmienna - przypisanie wartości
+              zmiennej / przy dłużej nazwie zmiennej należy użyć camelCase
+            </li>
+            <li>
+              const age=32; - stała zmienna - przypisanie wartości zmiennej /
+              przy dłużej nazwie zmiennej należy użyć camelCase
+            </li>
+            <li>` - backtick - specjalny ciąg znaków zwany literałem</li>
+            <li>
+              console.log(`Nazywam się ${name} i mam ${age} lat`) - ${zmienna} -
+              w użyciu mieszanych ciągów znaków w backticku
+            </li>
+            <li>typeof nazwaZmiennej - sprawdza jakiego typu jest zmienna</li>
+            <li>
+              document.querySelector('.selector') - podpinanie się pod elementy
+              html / selektor taki sam jak w CSS / warto dodać w BEM
+              modyfikator js czyli np. .header__menu--js
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
     <footer class="footer">
-        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+      Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
     </footer>
-
-</body>
-
+  </body>
 </html>
