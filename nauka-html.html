@@ -8,98 +8,124 @@
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <a href="index.html">WTF</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">JavaScript</a>
-        <a href="nauka-terminal.html">Terminal</a>
-      </nav>
-    </header>
-    <main>
+    <div class="page-background">
       <header class="header">
-        <h1>HTML</h1>
+        <nav class="navigation">
+          <a class="navigation__menu" href="index.html">WTF</a>
+          <a class="navigation__menu" href="nauka-html.html">HTML</a>
+          <a class="navigation__menu" href="nauka-css.html">CSS</a>
+          <a class="navigation__menu" href="nauka-js.html">JavaScript</a>
+          <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
+        </nav>
       </header>
 
-      <section>
-        <img src="img/header-html.png" alt="HTML" />
-        <h2>Treść</h2>
-        <article>
-          <p>
-            HTML = HyperText Markup Language, HTML odpowiada za właściwe
-            opakowanie treści
-          </p>
-          <p>Treść to:</p>
-          <ul>
-            <li>Teksty</li>
-            <li>Nagłówki</li>
-            <li>Linki</li>
-            <li>Listy</li>
-            <li>Definicje</li>
-            <li>Obrazki</li>
-            <li>Video</li>
-            <li>Formularze</li>
-            <li>Wszystko co jest nośnikiem informacji</li>
-          </ul>
-          <h4>HTML składa się ze znaczników &#47; Tagów &#47; Elementów</h4>
-          <p>&lt;znacznik atrybut="wartość"&gt;treść&lt;&#47;znacznik&gt;</p>
-          <p>Zaczynamy pisanie od !+tab</p>
-          <h4>Poznane znaczniki:</h4>
-          <p>&lt;main&gt; - główna część dokumentu</p>
-          <p>
-            &lt;section&gt; - sekcje dokumentu np. tak jak sekcja sportowa w
-            gazecie
-          </p>
-          <p>
-            &lt;article&gt; - samodzielne treści np. tak jak pojedyńczy artykuł
-            w sekcji sportowej
-          </p>
-          <p>&lt;header&gt; - nagłówek dokumentu / sekcji / artykułu</p>
-          <p>&lt;footer&gt; - stopka dokumentu / sekcji / artykułu</p>
-          <p>&lt;h1-h6&gt; - tekstowe nagłówki tytułowe - dokumentu / sekcji</p>
-          <p>&lt;p&gt; - paragraf / akapit</p>
-          <p>&lt;br&gt; - nowa linia - znacznik pojedynczy</p>
-          <p>&lt;b&gt;&lt;i&gt; - wyróżniki</p>
-          <p>
-            &lt;strong&gt;&lt;em&gt; - wyróżniki - m.in. dla przeczytania jako
-            ważne lub ironia
-          </p>
-          <p>
-            &lt;a href = ""target"" target="blank/window/self"&gt;opis
-            łącza&lt;a/&gt; - linki
-          </p>
-          <p>&lt;element id="moj_identyfikator"&gt; - wewnętrzne łącza</p>
-          <p>
-            &lt;a href="#moj_identyfikator"&gt;opis łącza&lt;a/&gt; - wewnętrzne
-            łącza - przejście np. do sekcji z opisanym id
-          </p>
-          <p>&lt;nav&gt; - główna nawigacja - poza main-em</p>
-          <p>&lt;img src="" alt=""&gt; - obrazek</p>
-          <p>
-            &lt;znacznik style="color:red"; "background:blue"&gt;treść
-            &lt;/znacznik&gt; - zmiana stylu wybranego znacznika
-          </p>
-          <p>
-            &lt;znacznik class="name"&gt;treść &lt;/znacznik&gt; - selektor
-            stylu - dla CSS / "name" warto wpisać z użyciem kebab-case
-          </p>
-          <p>
-            &lt;znacznik id="name"&gt;treść &lt;/znacznik&gt; - selektor stylu -
-            dla CSS / "name" warto wpisać z użyciem kebab-case / id jedno na
-            stronie - nie używać przy wielu elementach
-          </p>
-          <p>&lt;style&gt; - styl zamiast .css /przy danym elemencie</p>
-          <p>
-            &lt;script&gt; - skrypt kodu zamiast .js / wrzuca się przez
-            zamknięciem znacznika body - na końcu
-          </p>
-          <p>&lt;div&gt; - pudełko / opakowanie</p>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
-    </footer>
+      <main>
+        <header class="header-title">
+          <h1 class="header-title__h1">HTML</h1>
+        </header>
+
+        <section class="content">
+          <img class="content__logo" src="img/header-html.png" alt="HTML" />
+          <h2 class="content__h2">Treść</h2>
+
+          <article class="notes">
+            <p class="notes__paragraph">
+              HTML = HyperText Markup Language, HTML odpowiada za właściwe
+              opakowanie treści
+            </p>
+            <p class="notes__paragraph">Treść to:</p>
+            <ul class="notes-list">
+              <li class="notes-list__item">Teksty</li>
+              <li class="notes-list__item">Nagłówki</li>
+              <li class="notes-list__item">Linki</li>
+              <li class="notes-list__item">Listy</li>
+              <li class="notes-list__item">Definicje</li>
+              <li class="notes-list__item">Obrazki</li>
+              <li class="notes-list__item">Video</li>
+              <li class="notes-list__item">Formularze</li>
+              <li class="notes-list__item">
+                Wszystko co jest nośnikiem informacji
+              </li>
+            </ul>
+            <h4 class="notes__h4">
+              HTML składa się ze znaczników &#47; Tagów &#47; Elementów
+            </h4>
+            <p class="notes__paragraph">
+              &lt;znacznik atrybut="wartość"&gt;treść&lt;&#47;znacznik&gt;
+            </p>
+            <p class="notes__paragraph">Zaczynamy pisanie od !+tab</p>
+            <h4 class="notes__h4">Poznane znaczniki:</h4>
+            <p class="notes__paragraph">
+              &lt;main&gt; - główna część dokumentu
+            </p>
+            <p class="notes__paragraph">
+              &lt;section&gt; - sekcje dokumentu np. tak jak sekcja sportowa w
+              gazecie
+            </p>
+            <p class="notes__paragraph">
+              &lt;article&gt; - samodzielne treści np. tak jak pojedyńczy
+              artykuł w sekcji sportowej
+            </p>
+            <p class="notes__paragraph">
+              &lt;header&gt; - nagłówek dokumentu / sekcji / artykułu
+            </p>
+            <p class="notes__paragraph">
+              &lt;footer&gt; - stopka dokumentu / sekcji / artykułu
+            </p>
+            <p class="notes__paragraph">
+              &lt;h1-h6&gt; - tekstowe nagłówki tytułowe - dokumentu / sekcji
+            </p>
+            <p class="notes__paragraph">&lt;p&gt; - paragraf / akapit</p>
+            <p class="notes__paragraph">
+              &lt;br&gt; - nowa linia - znacznik pojedynczy
+            </p>
+            <p class="notes__paragraph">&lt;b&gt;&lt;i&gt; - wyróżniki</p>
+            <p class="notes__paragraph">
+              &lt;strong&gt;&lt;em&gt; - wyróżniki - m.in. dla przeczytania jako
+              ważne lub ironia
+            </p>
+            <p class="notes__paragraph">
+              &lt;a href = ""target"" target="blank/window/self"&gt;opis
+              łącza&lt;a/&gt; - linki
+            </p>
+            <p class="notes__paragraph">
+              &lt;element id="moj_identyfikator"&gt; - wewnętrzne łącza
+            </p>
+            <p class="notes__paragraph">
+              &lt;a href="#moj_identyfikator"&gt;opis łącza&lt;a/&gt; -
+              wewnętrzne łącza - przejście np. do sekcji z opisanym id
+            </p>
+            <p class="notes__paragraph">
+              &lt;nav&gt; - główna nawigacja - poza main-em
+            </p>
+            <p class="notes__paragraph">&lt;img src="" alt=""&gt; - obrazek</p>
+            <p class="notes__paragraph">
+              &lt;znacznik style="color:red"; "background:blue"&gt;treść
+              &lt;/znacznik&gt; - zmiana stylu wybranego znacznika
+            </p>
+            <p class="notes__paragraph">
+              &lt;znacznik class="name"&gt;treść &lt;/znacznik&gt; - selektor
+              stylu - dla CSS / "name" warto wpisać z użyciem kebab-case
+            </p>
+            <p class="notes__paragraph">
+              &lt;znacznik id="name"&gt;treść &lt;/znacznik&gt; - selektor stylu
+              - dla CSS / "name" warto wpisać z użyciem kebab-case / id jedno na
+              stronie - nie używać przy wielu elementach
+            </p>
+            <p class="notes__paragraph">
+              &lt;style&gt; - styl zamiast .css /przy danym elemencie
+            </p>
+            <p class="notes__paragraph">
+              &lt;script&gt; - skrypt kodu zamiast .js / wrzuca się przez
+              zamknięciem znacznika body - na końcu
+            </p>
+            <p class="notes__paragraph">&lt;div&gt; - pudełko / opakowanie</p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+      </footer>
+    </div>
   </body>
 </html>

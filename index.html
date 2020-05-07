@@ -8,141 +8,187 @@
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <a href="index.html">WTF</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">JavaScript</a>
-        <a href="nauka-terminal.html">Terminal</a>
-      </nav>
-    </header>
-
-    <main>
+    <div class="page-background">
       <header class="header">
-        <h1>Martyn - WTF Dziennik</h1>
+        <nav class="navigation">
+          <a class="navigation__menu" href="index.html">WTF</a>
+          <a class="navigation__menu" href="nauka-html.html">HTML</a>
+          <a class="navigation__menu" href="nauka-css.html">CSS</a>
+          <a class="navigation__menu" href="nauka-js.html">JavaScript</a>
+          <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
+        </nav>
       </header>
 
-      <section>
-        <img src="img/header-wtf.png" alt="WTF" />
-        <h2>Kim jestem?</h2>
-        <p>
-          Cześć! Jestem Martyn i lubię króliki.
-        </p>
-      </section>
+      <main>
+        <header class="header-title">
+          <h1 class="header-title__h1">Martyn - WTF Dziennik</h1>
+        </header>
 
-      <section>
-        <h2>Notatki z WTF: Co ten fronted</h2>
-        <article>
-          <h3>Oprgramowanie i przydatne strony:</h3>
-          <h4>Oprogramowanie:</h4>
-          <ul>
-            <li>Visual Studio Code - framework</li>
-            <li>Slack - komunikator</li>
-          </ul>
-          <h4>Przydatne strony:</h4>
-          <ul>
-            <li>
-              <a href="https://www.colorzilla.com/chrome/" target="_blank"
-                >Program do pobierania koloru</a
-              >
-            </li>
-            <li>
-              <a href="https://coolors.co" target="_blank"
-                >Strona z paletami kolorów</a
-              >
-            </li>
-            <li>
-              <a href="https://roadmap.sh/frontend" target="_blank"
-                >Schemat wiedzy we frontendzie - mapa rozwoju</a
-              >
-            </li>
-            <li>
-              <a href="https://validator.w3.org/nu/#textarea" target="_blank"
-                >Validator - sprawdza kod</a
-              >
-            </li>
-            <li>
-              <a href="https://www.w3.org/TR/html52/" target="_blank"
-                >Oficjalna strona html</a
-              >
-            </li>
-            <li>
-              <a href="https://www.w3.org/TR/CSS/" target="_blank"
-                >Oficjalna strona CSS</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.freeformatter.com/html-entities.html"
-                target="_blank"
-                >Znaki specjalne - znaczniki html</a
-              >
-            </li>
-            <li>
-              <a
-                href="http://www.htmlandcssbook.com/extras/html-escape-codes/"
-                target="_blank"
-                >Znaki specjalne v2- znaczniki html</a
-              >
-            </li>
-            <li>
-              <a href="https://trello.com" target="_blank"
-                >Strona do przygotowania kanbana</a
-              >
-            </li>
-            <li>
-              <a href="https://animista.net/" target="_blank">Animacje CSS</a>
-            </li>
-            <li>
-              <a
-                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
-                target="_blank"
-                >Strona z atrybutami html</a
-              >
-            </li>
-            <li>
-              <a href="https://thenounproject.com/" target="_blank"
-                >Darmowe ikony</a
-              >
-            </li>
-            <li>
-              <a href="https://git-scm.com/" target="_blank"
-                >Git - system kontroli wersji/archiwizacja/praca w grupie</a
-              >
-            </li>
-            <li>
-              <a href="https://github.com/" target="_blank"
-                >GitHub - portal do dzielenia się kodem</a
-              >
-            </li>
-            <li>
-              <a href="https://caniuse.com/" target="_blank"
-                >Można sprawdzić czy dana przeglądarka używa znacznika/stylu
-                itp.</a
-              >
-            </li>
-          </ul>
-          <h3>Warstwy w stronach internetowych</h3>
-          <ul>
-            <li>Warstwa 0 - Treść</li>
-            <li>Warstwa 1 - HTML</li>
-            <li>Warstwa 2 - CSS</li>
-            <li>Warstwa 3 - JavaScript</li>
-          </ul>
-          <h3>Kanban - tabela zadań</h3>
-          <ul>
-            <li>TODO - co jest do zrobienia?</li>
-            <li>DOING - W trakcie (najlepiej z jednym zadaniem)</li>
-            <li>DONE - Zrobione</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      Notatki ze szkolenia WTF: Co ten frontend / edycja 2020 / aktualne na
-      05.05.2020 r.
-    </footer>
+        <section class="introduction">
+          <img class="introduction__img" src="img/header-wtf.png" alt="WTF" />
+          <h2 class="introduction__h2">Kim jestem?</h2>
+          <p class="intoduction__paragraph">
+            Cześć! Jestem Martyn i lubię króliki.
+          </p>
+        </section>
+
+        <section class="content">
+          <h2 class="content__h2">Notatki z WTF: Co ten fronted</h2>
+
+          <article class="notes">
+            <h3 class="notes__h3">Oprgramowanie i przydatne strony:</h3>
+            <h4 class="notes__h4">Oprogramowanie:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">Visual Studio Code - framework</li>
+              <li class="notes-list__item">Slack - komunikator</li>
+            </ul>
+            <h4 class="notes__h4">Przydatne strony:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://www.colorzilla.com/chrome/"
+                  target="_blank"
+                  >Program do pobierania koloru</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://coolors.co"
+                  target="_blank"
+                  >Strona z paletami kolorów</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://roadmap.sh/frontend"
+                  target="_blank"
+                  >Schemat wiedzy we frontendzie - mapa rozwoju</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://validator.w3.org/nu/#textarea"
+                  target="_blank"
+                  >Validator - sprawdza kod</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://www.w3.org/TR/html52/"
+                  target="_blank"
+                  >Oficjalna strona html</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://www.w3.org/TR/CSS/"
+                  target="_blank"
+                  >Oficjalna strona CSS</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://www.freeformatter.com/html-entities.html"
+                  target="_blank"
+                  >Znaki specjalne - znaczniki html</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="http://www.htmlandcssbook.com/extras/html-escape-codes/"
+                  target="_blank"
+                  >Znaki specjalne v2- znaczniki html</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://trello.com"
+                  target="_blank"
+                  >Strona do przygotowania kanbana</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://animista.net/"
+                  target="_blank"
+                  >Animacje CSS</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                  target="_blank"
+                  >Strona z atrybutami html</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://thenounproject.com/"
+                  target="_blank"
+                  >Darmowe ikony</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://git-scm.com/"
+                  target="_blank"
+                  >Git - system kontroli wersji/archiwizacja/praca w grupie</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://github.com/"
+                  target="_blank"
+                  >GitHub - portal do dzielenia się kodem</a
+                >
+              </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://caniuse.com/"
+                  target="_blank"
+                  >Można sprawdzić czy dana przeglądarka używa znacznika/stylu
+                  itp.</a
+                >
+              </li>
+            </ul>
+            <h3 class="notes__h3">Warstwy w stronach internetowych</h3>
+            <ul class="notes-list">
+              <li class="notes-list__item">Warstwa 0 - Treść</li>
+              <li class="notes-list__item">Warstwa 1 - HTML</li>
+              <li class="notes-list__item">Warstwa 2 - CSS</li>
+              <li class="notes-list__item">Warstwa 3 - JavaScript</li>
+            </ul>
+            <h3 class="notes__h3">Kanban - tabela zadań</h3>
+            <ul class="notes-list">
+              <li class="notes-list__item">TODO - co jest do zrobienia?</li>
+              <li class="notes-list__item">
+                DOING - W trakcie (najlepiej z jednym zadaniem)
+              </li>
+              <li class="notes-list__item">DONE - Zrobione</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020 / aktualne na
+        05.05.2020 r.
+      </footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>

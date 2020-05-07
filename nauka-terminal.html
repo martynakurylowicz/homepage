@@ -8,68 +8,92 @@
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <a href="index.html">WTF</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">JavaScript</a>
-        <a href="nauka-terminal.html">Terminal</a>
-      </nav>
-    </header>
-    <main>
+    <div class="page-background">
       <header class="header">
-        <h1>Terminal</h1>
+        <nav class="navigation">
+          <a class="navigation__menu" href="index.html">WTF</a>
+          <a class="navigation__menu" href="nauka-html.html">HTML</a>
+          <a class="navigation__menu" href="nauka-css.html">CSS</a>
+          <a class="navigation__menu" href="nauka-js.html">JavaScript</a>
+          <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
+        </nav>
       </header>
-      <section>
-        <img src="img/header-terminal.png" alt="Terminal" />
-        <h2>Czarne okienko</h2>
-        <article>
-          <p>Ścieżka: Start + należy wpisać "cmd"</p>
-          <p>Do skakania po poleceniach można użyć strzałek góra i dół.</p>
-          <h4>Polecenia:</h4>
-          <ul>
-            <li>cd 'lokalizacja' - przenosi do konretnego folderu</li>
-            <li>cd - wyświetlenie aktualnej ścieżki</li>
-            <li>dir - robi listę zawartości lokalizacji</li>
-            <li>mk dir 'nazwa' - tworzy nowy katalog w lokalizacji</li>
-            <li>code . - odpalenie programu</li>
-            <li>cd .. - wejdź do katalogu wyżej</li>
-            <li>git - wyszukanie informacji o aplikacji GIT</li>
-            <li>
-              git config --global user.name "Imię i nazwisko" - nadanie
-              oficjalnej nazwy użytkowanika
-            </li>
-            <li>
-              git config --global user.email "mail@mail.com" - nadanie
-              oficjalnego maila użytkownika
-            </li>
-            <li>
-              git config --get user.name - sprawdzenie aktualnego użytkownika
-            </li>
-            <li>
-              git init - założenie nowego repozytorium / repozytorium = projekt
-            </li>
-            <li>git status - informacje na temat danego projektu</li>
-            <li>
-              git add . - dodaje do śledzenia wszystkie pliki w danym katalogu
-            </li>
-            <li>
-              git commit -m "opis zmian po angielsku" - tworzenie komita/
-              zapisanie aktualnej pracy
-            </li>
-            <li>
-              git push - eksportowanie zmian na githuba / do zrobienia po
-              zapisaniu commita
-            </li>
-            <li>gitk - historia zapisów</li>
-            <li>cls - czyści terminal</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
-    </footer>
+
+      <main>
+        <header class="header-title">
+          <h1 class="header-title__h1">Terminal</h1>
+        </header>
+
+        <section class="content">
+          <img
+            class="content__logo"
+            src="img/header-terminal.png"
+            alt="Terminal"
+          />
+          <h2 class="content__h2">Czarne okienko</h2>
+
+          <article class="notes">
+            <p class="notes__paragraph">Ścieżka: Start + należy wpisać "cmd"</p>
+            <p class="notes__paragraph">
+              Do skakania po poleceniach można użyć strzałek góra i dół.
+            </p>
+            <h4 class="notes__h4">Polecenia:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">
+                cd 'lokalizacja' - przenosi do konretnego folderu
+              </li>
+              <li class="notes-list__item">
+                cd - wyświetlenie aktualnej ścieżki
+              </li>
+              <li class="notes-list__item">
+                dir - robi listę zawartości lokalizacji
+              </li>
+              <li class="notes-list__item">
+                mk dir 'nazwa' - tworzy nowy katalog w lokalizacji
+              </li>
+              <li class="notes-list__item">code . - odpalenie programu</li>
+              <li class="notes-list__item">cd .. - wejdź do katalogu wyżej</li>
+              <li class="notes-list__item">
+                git - wyszukanie informacji o aplikacji GIT
+              </li>
+              <li class="notes-list__item">
+                git config --global user.name "Imię i nazwisko" - nadanie
+                oficjalnej nazwy użytkowanika
+              </li>
+              <li class="notes-list__item">
+                git config --global user.email "mail@mail.com" - nadanie
+                oficjalnego maila użytkownika
+              </li>
+              <li class="notes-list__item">
+                git config --get user.name - sprawdzenie aktualnego użytkownika
+              </li>
+              <li class="notes-list__item">
+                git init - założenie nowego repozytorium / repozytorium =
+                projekt
+              </li>
+              <li class="notes-list__item">
+                git status - informacje na temat danego projektu
+              </li>
+              <li class="notes-list__item">
+                git add . - dodaje do śledzenia wszystkie pliki w danym katalogu
+              </li>
+              <li class="notes-list__item">
+                git commit -m "opis zmian po angielsku" - tworzenie komita/
+                zapisanie aktualnej pracy
+              </li>
+              <li class="notes-list__item">
+                git push - eksportowanie zmian na githuba / do zrobienia po
+                zapisaniu commita
+              </li>
+              <li class="notes-list__item">gitk - historia zapisów</li>
+              <li class="notes-list__item">cls - czyści terminal</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+      </footer>
+    </div>
   </body>
 </html>

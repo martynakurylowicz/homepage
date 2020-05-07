@@ -8,154 +8,190 @@
   </head>
 
   <body>
-    <header>
-      <nav class="menu">
-        <a href="index.html">WTF</a>
-        <a href="nauka-html.html">HTML</a>
-        <a href="nauka-css.html">CSS</a>
-        <a href="nauka-js.html">JavaScript</a>
-        <a href="nauka-terminal.html">Terminal</a>
-      </nav>
-    </header>
-    <main>
+    <div class="page-background">
       <header class="header">
-        <h1>CSS</h1>
+        <nav class="navigation">
+          <a class="navigation__menu" href="index.html">WTF</a>
+          <a class="navigation__menu" href="nauka-html.html">HTML</a>
+          <a class="navigation__menu" href="nauka-css.html">CSS</a>
+          <a class="navigation__menu" href="nauka-js.html">JavaScript</a>
+          <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
+        </nav>
       </header>
 
-      <section>
-        <img src="img/header-css.png" alt="CSS" />
-        <h2>Style</h2>
-        <article>
-          <p>Reguły CSS:</p>
-          <ul>
-            <li>
-              Hierarchia: ( !important ; style="" ); #name ; .name ; element - w
-              nawiasie lepiej nie używać
-            </li>
-            <li>
-              Kod czyta się od góry - przy takich samych selektorach i
-              znacznikach to co jest niżej wypisane w stylach będzie ostatecznym
-              stylem
-            </li>
-            <li>
-              Dwa style w jednym selektorze np. dwa kolory - przy takich
-              przypadkach dolny jest docelowym
-            </li>
-            <li>Najlepiej zawsze dodawać klasy do wszystkich elementów</li>
-            <li>
-              Nazywamy klasy po angielsku zgodnie z przeznaczeniem z użyciek
-              kebab-case
-            </li>
-            <li>
-              Jednostki: 0 możemy zapisać bez jednostki/ px - piksele,
-              %-procent, vw-viewport width/parametr całego "okna", vh-viewport
-              height/parametr całego "okna"
-            </li>
-          </ul>
-          <h4>CSS = Cascading Style Sheets</h4>
-          <p>
-            CSS odpowiadają za prezentację. Wpywają na wygląd elementów HTML na
-            ekranie, wydrukach itp. Pliki zawierające kod CSS mają rozszerzenie
-            .css
-          </p>
-          <p>CSS można stylować zgodnie z poniższym box modelem:</p>
-          <img src="img/box-model.png" alt="box model" class="img-text" />
+      <main>
+        <header class="header-title">
+          <h1 class="header-title__h1">CSS</h1>
+        </header>
 
-          <h4>BEM:</h4>
-          <p>block__element--modifier</p>
-          <p>
-            Opisanie klas na zasadzie dłoni -> .hand -> .hand__finger ->
-            .hand__finger--pinky itp.
-          </p>
-          <img src="img/hand-model.png" alt="hand model" class="img-text" />
-          <p>Składnia CSS to reguły:</p>
-          <p>selektor &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125;</p>
-          <p>
-            linkowanie stylu &lt;link href="style.css" rel="stylesheet"
-            type="text/css"&gt;
-          </p>
+        <section class="content">
+          <img class="content__logo" src="img/header-css.png" alt="CSS" />
+          <h2 class="content__h2">Style</h2>
 
-          <h4>Poznane selektory:</h4>
-          <p>#id. class element - selektory stylów</p>
-          <p>
-            .name &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125; -
-            selektor klasy
-          </p>
-          <p>
-            #name &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125; -
-            selektor id
-          </p>
-          <p>
-            selektor podsekcja &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125;
-            - stylowanie danego elementu w wybranym selektorze
-          </p>
-          <p>
-            !important - do zastosowania w ostateczności jako dopiska do stylu /
-            nadpisuje pozostałe style elementu wybranym stylem
-          </p>
-          <p>
-            display:block lub display:inline - elementy ustawiają się jako bloki
-            pod sobą lub w linii obok siebie
-          </p>
-          <p>display:inline-block - dodatkowe właściwości</p>
-          <p>
-            width:/height: - szerokość wysokość elementów / zawsze dodaj
-            jednostkę
-          </p>
-          <p>
-            max-width: / max-height: - maksymalne parametry elementów / nie robi
-            się pasek przewijania
-          </p>
-          <p>min-width: / min-height: - minimalne parametry elementów</p>
-          <p>
-            overflow: hidden; - wszystko co jest poza divem jest
-            schowane/odcięte
-          </p>
-          <p>overflow: auto; - jako invisible + dodaje scroll w divie</p>
-          <p>
-            padding: jednostka - wewnętrzny margines / można wypisać jednostki w
-            kolejności top, right, bottom, left - jak w zegarku / lub parami
-            lustrzanie
-          </p>
-          <p>border: jednostka / np. solid / color - obramowanie</p>
-          <p>border-radius: jednostka - zaokrąglenie narożników</p>
-          <p>
-            margin: jednostka - odsunięcie od innych elementów - margines /
-            marginesy się sumują
-          </p>
-          <p>margin: __px auto - margines automatyczny - wyśrodkowany</p>
-          <p>
-            box-sizing: border-box /content-box - element dostosowuje się do
-            wymiarów danych elementów / border mieści się w wymiarze
-          </p>
-          <p>
-            position: static; / relative; / absolute; - absolute przyjmuje
-            pozycje z poniższych znaczników (jak współrzędne)
-          </p>
-          <p>top: jednostka / left / right / bottom - pozycja</p>
-          <p>
-            z-index: liczba; - hierarchia - wyższy jest bliżej ekranu czyli nad
-            / pod
-          </p>
-          <p>position: fixed; - zafiksowany / przyklejony np. dla nagłówków</p>
-          <p>
-            postition: sticky; - element przeklejony który wyświetla się cały
-            czas przy scrollowaniu /nie może mieć overflowa
-          </p>
-          <p>
-            float: - float nie służy do budowania layoutów - flout służy do
-            opływania elementów / np. float: left -jestem po lewej a treść
-            opływa mnie po przeciwnej czyli prawej
-          </p>
-          <p>
-            clear: both - czyści z dwóch stron / dopasowuje do największych
-            parametrów
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
-      Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
-    </footer>
+          <article class="notes">
+            <p class="notes__paragraph">Reguły CSS:</p>
+            <ul class="notes-list">
+              <li class="notes-list__item">
+                Hierarchia: ( !important ; style="" ); #name ; .name ; element -
+                w nawiasie lepiej nie używać
+              </li>
+              <li class="notes-list__item">
+                Kod czyta się od góry - przy takich samych selektorach i
+                znacznikach to co jest niżej wypisane w stylach będzie
+                ostatecznym stylem
+              </li>
+              <li class="notes-list__item">
+                Dwa style w jednym selektorze np. dwa kolory - przy takich
+                przypadkach dolny jest docelowym
+              </li>
+              <li class="notes-list__item">
+                Najlepiej zawsze dodawać klasy do wszystkich elementów
+              </li>
+              <li class="notes-list__item">
+                Nazywamy klasy po angielsku zgodnie z przeznaczeniem z użyciek
+                kebab-case
+              </li>
+              <li class="notes-list__item">
+                Jednostki: 0 możemy zapisać bez jednostki/ px - piksele,
+                %-procent, vw-viewport width/parametr całego "okna", vh-viewport
+                height/parametr całego "okna"
+              </li>
+            </ul>
+            <h4 class="notes__h4">CSS = Cascading Style Sheets</h4>
+            <p class="notes__paragraph">
+              CSS odpowiadają za prezentację. Wpywają na wygląd elementów HTML
+              na ekranie, wydrukach itp. Pliki zawierające kod CSS mają
+              rozszerzenie .css
+            </p>
+            <p class="notes__paragraph">
+              CSS można stylować zgodnie z poniższym box modelem:
+            </p>
+            <img
+              class="notes__img-text"
+              src="img/box-model.png"
+              alt="box model"
+            />
+
+            <h4 class="notes__h4">BEM:</h4>
+            <p class="notes__paragraph">block__element--modifier</p>
+            <p class="notes__paragraph">
+              Opisanie klas na zasadzie dłoni -> .hand -> .hand__finger ->
+              .hand__finger--pinky itp.
+            </p>
+            <img
+              class="notes__img-text"
+              src="img/hand-model.png"
+              alt="hand model"
+            />
+            <p class="notes__paragraph">Składnia CSS to reguły:</p>
+            <p class="notes__paragraph">
+              selektor &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125;
+            </p>
+            <p class="notes__paragraph">
+              linkowanie stylu &lt;link href="style.css" rel="stylesheet"
+              type="text/css"&gt;
+            </p>
+
+            <h4 class="notes__h4">Poznane selektory:</h4>
+            <p class="notes__paragraph">
+              #id. class element - selektory stylów
+            </p>
+            <p class="notes__paragraph">
+              .name &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125; -
+              selektor klasy
+            </p>
+            <p class="notes__paragraph">
+              #name &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125; -
+              selektor id
+            </p>
+            <p class="notes__paragraph">
+              selektor podsekcja &#123;<br />&#32;&#32;właściwość: wartość;<br />&#125;
+              - stylowanie danego elementu w wybranym selektorze
+            </p>
+            <p class="notes__paragraph">
+              !important - do zastosowania w ostateczności jako dopiska do stylu
+              / nadpisuje pozostałe style elementu wybranym stylem
+            </p>
+            <p class="notes__paragraph">
+              display:block lub display:inline - elementy ustawiają się jako
+              bloki pod sobą lub w linii obok siebie
+            </p>
+            <p class="notes__paragraph">
+              display:inline-block - dodatkowe właściwości
+            </p>
+            <p class="notes__paragraph">
+              width:/height: - szerokość wysokość elementów / zawsze dodaj
+              jednostkę
+            </p>
+            <p class="notes__paragraph">
+              max-width: / max-height: - maksymalne parametry elementów / nie
+              robi się pasek przewijania
+            </p>
+            <p class="notes__paragraph">
+              min-width: / min-height: - minimalne parametry elementów
+            </p>
+            <p class="notes__paragraph">
+              overflow: hidden; - wszystko co jest poza divem jest
+              schowane/odcięte
+            </p>
+            <p class="notes__paragraph">
+              overflow: auto; - jako invisible + dodaje scroll w divie
+            </p>
+            <p class="notes__paragraph">
+              padding: jednostka - wewnętrzny margines / można wypisać jednostki
+              w kolejności top, right, bottom, left - jak w zegarku / lub parami
+              lustrzanie
+            </p>
+            <p class="notes__paragraph">
+              border: jednostka / np. solid / color - obramowanie
+            </p>
+            <p class="notes__paragraph">
+              border-radius: jednostka - zaokrąglenie narożników
+            </p>
+            <p class="notes__paragraph">
+              margin: jednostka - odsunięcie od innych elementów - margines /
+              marginesy się sumują
+            </p>
+            <p class="notes__paragraph">
+              margin: __px auto - margines automatyczny - wyśrodkowany
+            </p>
+            <p class="notes__paragraph">
+              box-sizing: border-box /content-box - element dostosowuje się do
+              wymiarów danych elementów / border mieści się w wymiarze
+            </p>
+            <p class="notes__paragraph">
+              position: static; / relative; / absolute; - absolute przyjmuje
+              pozycje z poniższych znaczników (jak współrzędne)
+            </p>
+            <p class="notes__paragraph">
+              top: jednostka / left / right / bottom - pozycja
+            </p>
+            <p class="notes__paragraph">
+              z-index: liczba; - hierarchia - wyższy jest bliżej ekranu czyli
+              nad / pod
+            </p>
+            <p class="notes__paragraph">
+              position: fixed; - zafiksowany / przyklejony np. dla nagłówków
+            </p>
+            <p class="notes__paragraph">
+              postition: sticky; - element przeklejony który wyświetla się cały
+              czas przy scrollowaniu /nie może mieć overflowa
+            </p>
+            <p class="notes__paragraph">
+              float: - float nie służy do budowania layoutów - flout służy do
+              opływania elementów / np. float: left -jestem po lewej a treść
+              opływa mnie po przeciwnej czyli prawej
+            </p>
+            <p class="notes__paragraph">
+              clear: both - czyści z dwóch stron / dopasowuje do największych
+              parametrów
+            </p>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+      </footer>
+    </div>
   </body>
 </html>
