@@ -134,6 +134,10 @@
             <p class="notes__paragraph">
               &lt;dl&gt; - lista z definicją / dt - tytuł, dd - treść
             </p>
+
+            <h4 class="notes__h4">
+              Tabele:
+            </h4>
             <p class="notes__paragraph">&lt;table&gt; - tabela</p>
             <p class="notes__paragraph">
               &lt;tr&gt; - element tabeli - wiersz (row)
@@ -151,6 +155,92 @@
               &lt;tbody&gt; - element tabeli - ciało tabeli
             </p>
             <p class="notes__paragraph">&lt;caption&gt; - opis tabeli</p>
+
+            <h4 class="notes__h4">
+              Formularze:
+            </h4>
+            <p class="notes__paragraph">
+              &lt;form&gt; - formularz - opakowanie
+            </p>
+            <p class="notes__paragraph">
+              &lt;input&gt; - do wpisywania / opakować w div lub paragraf
+            </p>
+            <p class="notes__paragraph">
+              &lt;input name="nazwaPola"&gt; - każdy input musi mieć swoją
+              nazwę/zmienną
+            </p>
+            <p class="notes__paragraph">
+              &lt;input id="nazwaPola" name="nazwaPola"&gt; - idenyfikacja pola
+            </p>
+            <p class="notes__paragraph">&lt;label&gt; - opis pola</p>
+            <p class="notes__paragraph">
+              &lt;label for="nazwaPola"&gt; - przypisujemy do inputa po id
+            </p>
+            <p class="notes__paragraph">
+              &lt;placeholder="Proszę wpisać imię"&gt; - dodany w inpucie
+            </p>
+            <p class="notes__paragraph">
+              &lt;fieldset&gt; - grupa pól np. do adresu
+            </p>
+            <p class="notes__paragraph">&lt;legend&gt; - opis grupy pól</p>
+            <p class="notes__paragraph">
+              &lt;input type="radio"&gt; - wybór pomiędzy opcjami - domyślnie
+              kropki<br />
+              np.&lt;label&gt;&lt;input name="iceCream" type="radio"
+              value="chocolate"&gt;Chocolate&lt;/label&gt;
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="ckeckbox"&gt; - wybór pomiędzy opcjami / można
+              zaznaczyć kilka - domyślnie kwadraty
+            </p>
+            <p class="notes__paragraph">
+              &lt;input checked type="radio"&gt; - domyślnie zaznaczony
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="number/tel/email"&gt; - typy do precyzowania
+              danych
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="range" min="0" max="100" step="5"&gt; - typ do
+              wybierania zakresu - suwak
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="password"&gt; - typ do hasła - zasłania wpisane
+              wartości
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="file"&gt; - do załączenia pliku
+            </p>
+            <p class="notes__paragraph">
+              &lt;select&gt; - zrobienie listy do wyboru - element listy
+              &lt;option&gt; / wybór z rozwijanego paska
+            </p>
+            <p class="notes__paragraph">
+              &lt;textarea&gt; - do opisywania - do wprowadzania dłuższej treści
+              jak wiadomość
+            </p>
+            <p class="notes__paragraph">
+              &lt;input type="submit" value="send"&gt; - wysyłanie formularza
+            </p>
+            <p class="notes__paragraph">
+              action="url://z-ktorym-gadamy" - adres do wysłania - żądanie typu
+              GET
+            </p>
+            <p class="notes__paragraph">
+              method="post" + action - żądanie typu POST
+            </p>
+            <p class="notes__paragraph">
+              enctype="application/x-www-form-irlencoded" - wartość domyślna
+              form<br />
+              enctype="multipart/form-data" - używamy, kiedy wysyłamy pliki
+            </p>
+            <p class="notes__paragraph">
+              required - po dodaniu do elementu formularza wyświetli informację,
+              że musi zostać wypełniony przed wysłaniem
+            </p>
+            <p class="notes__paragraph">
+              pattern="[a-zA-Z0-9]+" - wyrażenia regularne
+            </p>
           </article>
         </section>
       </main>
