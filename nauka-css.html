@@ -58,6 +58,9 @@
                 height/parametr całego "okna"
               </li>
               <li class="notes-list__item">
+                Jednostka ułamkowa przy gridach: fr - 1fr/4 2fr/4 itp.
+              </li>
+              <li class="notes-list__item">
                 Warto dodać plik bazowy stylów do swojego pliku -
                 normalize.css<br />
                 + dopiska do swojego cssa: html {box-sizing: border-box;} <br />
@@ -228,13 +231,46 @@
                 background-image: url('sciezka-do-pliku'); - tło obrazek <br />
                 //background-position: - ustawianie tła względem elementu, które
                 to tło dostaje <br />
-                //background-repeat: - powtarzanie tła / może być jak pattern <br />
-                //background-attachment: - np. tło pozostaje w miejscu , scrolluje się razem z treścią itp. <br />
-                //background-origin: - miejsce rozpoczęcia liczenia position <br />
-                //background-clip: - wskazanie miejsca w którym tło powinno zostać cięte <br />
+                //background-repeat: - powtarzanie tła / może być jak pattern
+                <br />
+                //background-attachment: - np. tło pozostaje w miejscu ,
+                scrolluje się razem z treścią itp. <br />
+                //background-origin: - miejsce rozpoczęcia liczenia position
+                <br />
+                //background-clip: - wskazanie miejsca w którym tło powinno
+                zostać cięte <br />
                 // rgb(a) - tło półprzezroczyste / wartość na końcu <br />
                 //background-size: - wielkośc tła (jak duże ma być) <br />
-                 gradienty: https://cssgradient.io/
+                gradienty: https://cssgradient.io/
+              </li>
+              <li class="notes-list__item">
+                display: grid; - do ustawienia elementów - container<br />
+                grid-template-columns:&lt;wartość po spacji&gt; - tworzenie
+                kolumn<br />
+                grid-template-rows:&lt;wartość po spacji&gt; - tworzenie
+                wierszy<br />
+                repeat(ileRazy, wartość) - powtórzenie zamiast wypisywanie
+                wartości<br />
+                column-gap: wartość - przerwy między kolumnami gridu <br />
+                row-gap: wartość - przerwy między wierszami gridu <br />
+                minmax(minWartość, maxWartość) - wymiary kolumn czy wierszy
+                <br />
+                grid-template-areas: - budowanie siatki layoutu <br />
+                grid-area: nazwa obszaru / row-start , col-start , row-end ,
+                col-end <br />
+                grid-row-start/grid-row-end: numer/[nazwa]/span - wskazanie na
+                siatce początku i końca <br />
+                grid-column-start/grid-column-end: numer/[nazwa]/span -
+                wskazanie na siatce początku i końca<br />
+                z-index - przykrywanie elementów
+              </li>
+              <li class="notes-list__item">
+                media queries - dostosowanie strony do różnych urządzeń <br />
+                @media screen/print/all ... - media type <br />
+                min-with/max-width/color/aspect-ratio/orientation ... -
+                parametry do których chcemy dostosować media style <br />
+                and/not/, - łączenie <br />
+                np. @media screen and (max-width: 600px){} <br />
               </li>
             </ul>
           </article>
