@@ -9,9 +9,10 @@
   </head>
 
   <body>
-    <div class="page-background">
+    <div class="page-navigation">
       <header class="header">
         <nav class="navigation">
+          <p class="navigation__logo">NOTATNIK WTF</p>
           <a class="navigation__menu" href="index.html">WTF</a>
           <a class="navigation__menu" href="nauka-html.html">HTML</a>
           <a class="navigation__menu" href="nauka-css.html">CSS</a>
@@ -19,23 +20,19 @@
           <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
         </nav>
       </header>
-
+    </div>
+    <div class="page-background">
       <main>
-        <header class="header-title">
-          <h1 class="header-title__h1">Martyn - WTF Dziennik</h1>
-          <p class="task-js"></p>
-        </header>
-
-        <section class="introduction">
-          <img class="introduction__img" src="img/header-wtf.png" alt="WTF" />
-          <h2 class="introduction__h2">Kim jestem?</h2>
-          <p class="intoduction__paragraph">
-            Cześć! Jestem Martyn i lubię króliki.
+        <div class="introduction">
+          <p class="introduction__paragraph">
+            Cześć! Jestem Martyn a to moje notatki ze szkolenia WTF: Co ten
+            frontend.
           </p>
-        </section>
+        </div>
 
         <section class="content">
           <h2 class="content__h2">Notatki z WTF: Co ten fronted</h2>
+          <p class="task-js"></p>
 
           <article class="notes">
             <h3 class="notes__h3">Oprgramowanie i przydatne strony:</h3>
@@ -207,15 +204,14 @@
                   >Normalize.css - podstawowe style porządkujące</a
                 >
               </li>
-            </li>
-            <li class="notes-list__item">
-              <a
-                class="notes-list__link"
-                href="https://www.figma.com/"
-                target="_blank"
-                >Figma - darmowy program do cięcia grafik</a
-              >
-            </li>
+              <li class="notes-list__item">
+                <a
+                  class="notes-list__link"
+                  href="https://www.figma.com/"
+                  target="_blank"
+                  >Figma - darmowy program do cięcia grafik</a
+                >
+              </li>
             </ul>
             <h3 class="notes__h3">Warstwy w stronach internetowych</h3>
             <ul class="notes-list">
@@ -235,11 +231,13 @@
           </article>
         </section>
       </main>
-      <footer class="footer">
+    </div>
+    <footer class="footer">
+      <p class="footer__paragraph">
         Notatki ze szkolenia WTF: Co ten frontend / edycja 2020 / aktualne na
         19.05.2020 r.
-      </footer>
-    </div>
+      </p>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
