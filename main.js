@@ -5,7 +5,6 @@ console.log(`Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`)
 
 const task = document.querySelector(".task-js");
 
-task.innerHTML = `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`;
 
 function hello(firstName, age) {
   console.log(

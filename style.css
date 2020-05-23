@@ -25,6 +25,14 @@
   max-width: 1200px;
 }
 
+.form__box{
+padding-bottom: 20px;
+}
+
+.form__item{
+  display: block;
+}
+
 .header {
   border-bottom: 1px solid rgb(0, 0, 0);
   width: 100%;
@@ -53,7 +61,7 @@
 }
 
 .introduction__paragraph {
-  color: #000000;
+  color: #636363;
   font-family: sans-serif;
   text-decoration: none;
   font-style: italic;
@@ -66,7 +74,7 @@
 .header-title__h1 {
   padding: 22px;
   margin: 0;
-  color: #111058;
+  color: #474747;
   font-style: normal;
   font-weight: normal;
 }
