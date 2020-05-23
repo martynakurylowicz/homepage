@@ -37,9 +37,8 @@
 
 .header-title {
   background-image: url(/img/coverphoto.jpg);
-  height: 200px;
+  height: 234px;
   margin-bottom: 20px;
-  background-size: 150%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -48,9 +47,8 @@
 
 .introduction {
   background-image: url(/img/coverphoto.jpg);
-  height: 200px;
+  height: 234px;
   margin-bottom: 20px;
-  background-size: 150%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
@@ -71,7 +69,9 @@
 .header-title__h1 {
   padding: 22px;
   margin: 0;
-  color: #000000;
+  color: #111058;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .navigation__logo {
@@ -85,6 +85,10 @@
   font-weight: bold;
   max-width: 1200px;
   margin-right: auto;
+}
+
+.hamburger-menu__button{
+  display: none;
 }
 
 .navigation {
@@ -108,8 +112,7 @@
 .notes__img-text {
   float: none;
   display: block;
-  width: 30%;
-  height: 30%;
+  max-width: 350px;
 }
 
 .notes-list__link {
@@ -123,4 +126,83 @@
   margin: auto;
   font-family: sans-serif;
   padding-top: 59px;
+}
+
+.navigation__hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 735px) {
+  .header {
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 58px;
+  }
+
+  .introduction__paragraph {
+    display: none;
+  }
+
+  .hamburger-menu__button {
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 1200px;
+    margin-right: auto;
+  }
+
+  .navigation__logo {
+    display: none;
+  }
+
+  .navigation {
+    background: #ffffff;
+    margin: auto;
+    display: none;
+  }
+
+  .navigation--open {
+    background: #ffffff;
+    margin: auto;
+    display: block;
+  }
+
+  .navigation__menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 10px 10px 20px;
+    padding-left: 70%;
+    font-size: 16px;
+    border-top: 1px solid rgb(63, 63, 63);
+    width: 100vw;
+    background-color: rgb(46, 46, 46);
+  }
+
+  .hamburger-menu {
+    max-width: 30px;
+    max-height: 30px;
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+  }
+
+  .navigation__hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 20px;
+    border: none;
+    background: none;
 }

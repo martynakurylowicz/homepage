@@ -1,17 +1,22 @@
 const firstName = "Martyn";
 const age = 32;
 
-console.log(
-    `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`
-    );
+console.log(`Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`);
 
-const task = document.querySelector('.task-js');
+const task = document.querySelector(".task-js");
 
-task.innerHTML = `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`
+task.innerHTML = `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName}.`;
 
 function hello(firstName, age) {
-    console.log(
-        `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName} i ma ${age} lata.`
-        );
+  console.log(
+    `Cześć! To strona nauki WTF. Notatki przygotowała ${firstName} i ma ${age} lata.`
+  );
 }
 hello(firstName, age);
+
+const hamburger = document.querySelector(".navigation__hamburger-menu--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
