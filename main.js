@@ -16,7 +16,7 @@ hello(firstName, age);
 
 const hamburger = document.querySelector(".navigation__hamburger-menu--js");
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener('click', () => {
   const nav = document.querySelector(".navigation--js");
-  nav.classList.toggle("navigation--open");
+  nav.classList.toggle('navigation--open');
 });
