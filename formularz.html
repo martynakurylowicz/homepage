@@ -33,7 +33,7 @@
       <main>
         <section class="content">
           <h2 class="form__title">Formularz</h2>
-          <form class="form">
+          <form class="form" method="post" action="https://dev.cotenfrontend.pl">
             <div class="form__box">
               <label for="firstName"> Imię:</label>
               <input
@@ -52,7 +52,118 @@
                 name="lastName"
               />
             </div>
-          </form>
+            <div class="form__box">
+              <label for="phoneNumber"> Numer telefonu:</label>
+              <input
+                class="form__item"
+                placeholder="012345678"
+                id="phoneNumber"
+                name="phoneNumber"
+                type="tel"
+              />
+            </div>
+            <div class="form__box">
+              <label for="email"> E-mail:</label>
+              <input
+                class="form__item"
+                placeholder="name@mail.com"
+                id="email"
+                name="email"
+                type="email"
+              />
+            </div>
+            <div class="form__box">
+              <label for="range"> Poziom zadowolenia w życiu:</label>
+              <input
+                class="form__item"
+                id="range"
+                name="range"
+                type="range"
+                min="0"
+                max="10"
+                step="2.5"
+              />
+            </div>
+            <div class="form__box">
+              <label for="avatar"> Wyślij avatar:</label>
+              <input class="form__item" id="avatar" name="avatar" type="file" />
+            </div>
+              <div class="form__box">
+                <label for="movie"> Wybierz ulubiony film:</label>
+                <select class="form__item" id="movie" name="movie">
+                  <option value="movie-1">Donnie Darko</option>
+                  <option value="movie-2"
+                    >A Girl Walks Home Alone at Night</option
+                  >
+                  <option value="movie-3"
+                    >Eternal Sunshine of the Spotless Mind</option
+                  >
+                </select>
+              </div>
+            <fieldset class="form__fieldset">
+              <legend>Adres:</legend>
+              <div class="form__box">
+                <label for="street"> Ulica:</label>
+                <input
+                  class="form__item"
+                  placeholder="Podaj ulicę"
+                  id="street"
+                  name="street"
+                />
+              </div>
+              <div class="form__box">
+                <label for="city"> Miasto:</label>
+                <input
+                  class="form__item"
+                  placeholder="Podaj miasto"
+                  id="city"
+                  name="city"
+                />
+              </div>
+              <div class="form__box">
+                <label for="postalCode"> Kod pocztowy:</label>
+                <input
+                  class="form__item"
+                  pattern="[0-9]{2}-[0-9]{3}"
+                  placeholder="00-000"
+                  id="postalCode"
+                  name="postalCode"/>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset">
+              <legend>Płeć:</legend>
+              <div class="form__box">
+                <label>
+                  <input type="radio" value="female" name="sex" />
+                  Kobieta</label
+                >
+              </div>
+              <div class="form__box">
+                <label>
+                  <input type="radio" value="male" name="sex" />
+                  Mężczyzna</label
+                >
+              </div>
+            </fieldset>
+            <div class="form__box">
+              <label for="yourStory"> Twoja wiadomość:</label>
+              <textarea
+                class="form__item"
+                id="yourStory"
+                name="yourStory"
+              >...</textarea>
+            </div>
+            <div class="form__box">
+              <label>
+                <input type="checkbox" checked name="agreement" /> Zgadzam
+                się</label
+              >
+            </div>
+            <div class="form__box">
+              <label>
+                <input type="submit" name="send" value="Wyślij" /></label>
+            </div>        
+           </form>
         </section>
       </main>
     </div>
